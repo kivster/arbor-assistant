@@ -26,10 +26,14 @@ an Arbor-approved product and it does not use the school/partner MIS API.
 
 This does **not** promise every Arbor feature. It does not download report PDFs,
 photos or attachments, extract exam files, backfill every historical academic year,
-or read data the school has not exposed. Meal account/payment history, notification
-centre contents, multi-child switching, SSO/MFA login, and populated grid layouts
+or read data the school has not exposed. Meal account/payment history, multi-child
+switching, SSO/MFA login, and populated grid layouts
 need further validation. The initial dashboard's student profiles are discovered;
 a child only reachable through a switcher may not yet be discovered.
+
+Notification-centre polling is deliberately excluded: opening the observed portal's
+notification panel cleared its unread badges. This integration must not silently
+consume the parent's portal notifications.
 
 A failed section is marked `error`; an unresolved dynamic store is marked `partial`.
 Neither is reported as zero. `not_exposed` means the expected navigation link was

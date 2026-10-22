@@ -41,7 +41,10 @@ URLs, photo URLs, and write methods in store definitions are ignored.
 - Report attachments, exam document bodies, homework files and photos.
 - Populated lazy grids and richer message layouts. Unknown stores are reported
   partial, not followed speculatively.
-- Meal/payment accounts and notification-centre contents.
+- Meal/payment accounts.
+- Notification-centre contents are deliberately excluded from automatic polling:
+  opening the observed panel cleared unread badges without a separate observed
+  mark-read request. Treat that endpoint as state-changing until proven otherwise.
 - Historical-year backfill. Polling reads the portal's current default year.
 - Community-school coverage beyond the first observed portal.
 
