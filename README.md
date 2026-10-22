@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="custom_components/arbor_assistant/brand/icon@2x.png" alt="Arbor Assistant: a green tree surrounding a blue home" width="160" height="160">
+</p>
+
 # Arbor Assistant
 
 An unofficial, read-only Arbor parent portal integration for Home Assistant.
