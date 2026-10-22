@@ -1,0 +1,16 @@
+get_student_data:
+  name: Get student data
+  description: Return the latest parent-visible records. Contains private educational data; avoid logging responses or sharing automation traces.
+  fields:
+    config_entry_id:
+      name: Integration
+      required: true
+      selector:
+        config_entry:
+          integration: arbor_assistant
+    student_id:
+      name: Student ID
+      description: The Arbor student ID shown in the parent portal URL.
+      required: true
+      selector:
+        text:

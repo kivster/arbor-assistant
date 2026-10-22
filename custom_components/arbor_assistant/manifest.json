@@ -1,0 +1,12 @@
+{
+  "domain": "arbor_assistant",
+  "name": "Arbor Assistant",
+  "codeowners": ["@kivster"],
+  "config_flow": true,
+  "documentation": "https://github.com/kivster/arbor-assistant",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/kivster/arbor-assistant/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

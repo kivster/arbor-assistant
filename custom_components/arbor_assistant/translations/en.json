@@ -1,0 +1,38 @@
+{
+  "title": "Arbor Assistant",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect your Arbor parent portal",
+        "description": "Use your school-specific Arbor URL and parent login. The integration only reads parent-visible data. Passwords are stored in Home Assistant's configuration; protect your backups.",
+        "data": {
+          "school_url": "School portal URL",
+          "username": "Email address",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Arbor did not accept the login. Check your details and complete any first-login verification in the portal.",
+      "cannot_connect": "Unable to read Arbor. Check the portal is available; its format may have changed.",
+      "invalid_url": "Enter an HTTPS school address such as https://example-school.uk.arbor.sc (without a page path)."
+    },
+    "abort": {
+      "already_configured": "This school and account are already configured.",
+      "reauth_successful": "Arbor login updated.",
+      "unique_id_mismatch": "Use the same school and email as the existing integration."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Arbor data options",
+        "description": "Detailed personal records are available only through the admin-only get_student_data action. Enabling them includes profile, contact, medical, dietary and consent details; automation traces may retain action responses.",
+        "data": {
+          "scan_interval": "Refresh interval (minutes)",
+          "include_personal_details": "Include personal profile details"
+        }
+      }
+    }
+  }
+}
