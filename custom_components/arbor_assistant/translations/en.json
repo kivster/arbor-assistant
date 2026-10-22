@@ -15,7 +15,7 @@
     "error": {
       "invalid_auth": "Arbor did not accept the login. Check your details and complete any first-login verification in the portal.",
       "cannot_connect": "Unable to read Arbor. Check the portal is available; its format may have changed.",
-      "invalid_url": "Enter an HTTPS school address such as https://example-school.uk.arbor.sc (without a page path)."
+      "invalid_url": "Enter the school-specific HTTPS origin ending in .uk.arbor.sc, without a page path."
     },
     "abort": {
       "already_configured": "This school and account are already configured.",
